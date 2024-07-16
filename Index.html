@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador de texto</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <img src="img/Inicio.png" class="Header">
+            <div class="centrado"><h1>ENCRIPTADOR DE TEXTO</h1><h3>Challenge ONE | Alura latam</h3></div>
+        </div>
+    </header>
+    <div class="fondo">
+        <center><h1>¿Qué quieres hacer?</h1></center>
+        <section>
+            <table border="1" width="75%" rules="none" class="form">
+                <tr>
+                    <td class="arriba">
+                        <textarea id="inputText" placeholder="Ingresa el texto aquí" rows="5" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <center>
+                    <td class="arriba">
+                        <button class="fill" onclick="encriptar()">Encriptar</button>
+                        <button class="fill" onclick="desencriptar()">Desencriptar</button>
+                    </td>
+                </center>
+                </tr>
+                <tr>
+                    <td class="abajo">
+                        <textarea id="outputText" placeholder="Resultado" rows="5" cols="50" readonly></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="arriba">
+                        <button class="fill" onclick="copiarTexto()">Copiar</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
